@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Rock Paper Scissor</title>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Montserrat:wght@700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="RockPaperScissor2Player.css">
+    </head>
+    <body id="main-game">
+        
+        <div id="loader-container">
+            <div class="loader"></div>
+        </div>
+
+        <div id="popup-container">
+            <button id="popquit-btn">QUIT</button>
+
+            <div id="overpopup">
+                    <div id="whowon">
+                    </div>
+                    <div id="try-again">Try again?</div>
+                    <div id="decision">
+                        <button id="yes">yes</button>
+                        <button id="no">no</button>
+                    </div>
+            </div>
+            <div id="popup">
+                <div id="rule-header">
+                    Game Rules
+                </div>
+                <div id="rules">
+                    <li>First to 3 points wins!</li>
+                    <li>Rock beats Scissors</li>
+                    <li>Scissors beats Paper</li>
+                    <li>Paper beats Rock</li>
+                    <li>Enjoy!</li>
+                </div>
+                <input type="text" placeholder="Player 1 Name" id="p1name" class="names">
+                <input type="text" placeholder="Player 2 Name" id="p2name" class="names">
+                <button id="submit">Start Game</button>
+            </div>
+        </div>
+
+        <button id="quit-btn">QUIT</button>
+
+        <div id="main-container">
+
+            <!--<div id="creator">
+                Created By: Kyle De Guzman &#38; Alyssa Mae Reyes
+            </div>-->   
+
+            <div id="identifier">
+                <div id="player1name">
+                    PLAYER 1
+                </div>
+                <div id="player2name">
+                    PLAYER 2
+                </div>
+            </div>
+
+            <div id="arena">
+                <div id="player1" class="player1">
+                    <img id="rock-player1" src="ROCK PAPER SCISSOR/COLORED ROCK.png">
+                </div>
+                <div id="score">
+                    <div id="player1score">
+                        0
+                    </div>
+                    <div>
+                        &#x3A;
+                    </div>
+                    <div id="player2score">
+                        0
+                    </div>
+                </div>
+                <div id="player2" class="player2">
+                    <img id="rock-player2" src="ROCK PAPER SCISSOR/COLORED ROCK.png">
+                </div>
+            </div>
+
+            <div id="details">
+                <div id="turn1" class="turns">
+                    Choose your pick
+                </div>
+                <div id="turn2" class="turns">
+                    Choose your pick
+                </div>
+            </div>
+
+            <div id="player-choices">
+                <div id="player1choices" class="choices">
+                    <button id="rock-choice-container1" class="rock-choice-container">
+                        <img id="rock-choice" src="ROCK PAPER SCISSOR/ROCK.png">
+                    </button>
+                    <button id="paper-choice-container1" class="paper-choice-container">
+                        <img id="paper-choice" src="ROCK PAPER SCISSOR/PAPER.png">
+                    </button>
+                    <button id="scissor-choice-container1" class="scissor-choice-container">
+                        <img id="scissor-choice" src="ROCK PAPER SCISSOR/SCISSOR.png">
+                    </button>
+                </div>
+                <div id="choice-divider"></div>
+                <div id="player2choices" class="choices">
+                    <button id="rock-choice-container2" class="rock-choice-container">
+                        <img id="rock-choice" src="ROCK PAPER SCISSOR/ROCK.png">
+                    </button>
+                    <button id="paper-choice-container2" class="paper-choice-container">
+                        <img id="paper-choice" src="ROCK PAPER SCISSOR/PAPER.png">
+                    </button>
+                    <button id="scissor-choice-container2" class="scissor-choice-container">
+                        <img id="scissor-choice" src="ROCK PAPER SCISSOR/SCISSOR.png">
+                    </button>
+                </div>
+            </div>
+
+        </div>
+        <script src="RockPaperScissor2Player.js"></script>
+    </body>
+</html>
